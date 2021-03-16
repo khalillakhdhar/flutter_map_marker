@@ -29,7 +29,7 @@ void main() => runApp(MaterialApp(
                     new Marker(
                         width: 45.0,
                         height: 45.0,
-                        point: new LatLng(33.88, 9.53),
+                        point: new LatLng(35.88, 9.53),
                         builder: (context) => new Container(
                               child: IconButton(
                                   icon: Icon(Icons.map),
