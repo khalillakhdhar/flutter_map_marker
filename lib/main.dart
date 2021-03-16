@@ -13,12 +13,13 @@ void main() => runApp(MaterialApp(
           children: <Widget>[
             new FlutterMap(
                 options: new MapOptions(
-                    minZoom: 10.0,
-                    center: new LatLng(40.71, -74.00),
-                    onLongPress: (point) => print("position is" +
-                        point.latitude.toString() +
-                        " " +
-                        point.longitude.toString())),
+                  minZoom: 10.0,
+                  center: new LatLng(40.71, -74.00),
+                  onLongPress: (point) => print("position is" +
+                      point.latitude.toString() +
+                      " " +
+                      point.longitude.toString()),
+                ),
                 layers: [
                   new TileLayerOptions(
                       urlTemplate:
