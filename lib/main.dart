@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong/latlong.dart';
 
-void create() {
-  print("ok");
-}
-
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Map Application',
@@ -35,7 +31,7 @@ void main() => runApp(MaterialApp(
                         point: new LatLng(40.73, -74.00),
                         builder: (context) => new Container(
                               child: IconButton(
-                                  icon: Icon(Icons.gps_fixed),
+                                  icon: Icon(Icons.map),
                                   onPressed: () {
                                     print('Marker tapped!');
                                   }),
