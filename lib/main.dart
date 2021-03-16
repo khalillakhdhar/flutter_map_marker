@@ -4,7 +4,7 @@ import 'package:latlong/latlong.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Map App',
+      title: 'Map Application',
       home: Scaffold(
         appBar: new AppBar(
           title: new Text('Map Application'),
