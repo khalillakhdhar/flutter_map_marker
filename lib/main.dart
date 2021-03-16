@@ -14,7 +14,7 @@ void main() => runApp(MaterialApp(
             new FlutterMap(
                 options: new MapOptions(
                   minZoom: 10.0,
-                  center: new LatLng(40.71, -74.00),
+                  center: new LatLng(33.88, 9.53),
                   onLongPress: (point) => print("position is" +
                       point.latitude.toString() +
                       " " +
@@ -29,7 +29,7 @@ void main() => runApp(MaterialApp(
                     new Marker(
                         width: 45.0,
                         height: 45.0,
-                        point: new LatLng(40.73, -74.00),
+                        point: new LatLng(33.88, 9.53),
                         builder: (context) => new Container(
                               child: IconButton(
                                   icon: Icon(Icons.map),
