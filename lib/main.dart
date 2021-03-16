@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong/latlong.dart';
 
+void create() {
+  print("ok");
+}
+
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Map Application',
@@ -13,7 +17,12 @@ void main() => runApp(MaterialApp(
           children: <Widget>[
             new FlutterMap(
                 options: new MapOptions(
-                    minZoom: 10.0, center: new LatLng(40.71, -74.00)),
+                    minZoom: 10.0,
+                    center: new LatLng(40.71, -74.00),
+                    onLongPress: (point) => print("position is" +
+                        point.latitude.toString() +
+                        " " +
+                        point.longitude.toString())),
                 layers: [
                   new TileLayerOptions(
                       urlTemplate:
